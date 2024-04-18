@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { About } from './feature/about/about';
-import { Movies } from './feature/movies/movies';
+import  Movies from './feature/movies/movies';
+import { Provider } from 'react-redux';
+import { store } from './store';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Provider store={store}><App /> </Provider> ,
     children: [{
     path: "/about",
     element: <About/>

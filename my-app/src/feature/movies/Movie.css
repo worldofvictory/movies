@@ -1,0 +1,23 @@
+.Movies-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid cornsilk;
+    border-radius: 5px;
+    box-shadow: 0 3px 4px 1px;
+    margin: 1rem;
+    padding: 1rem;
+}
+.Movies-card a {
+    color: white;
+}
+.Movies-list{
+  display: flex;
+  justify-content: center;  
+}
+.Movies-card-overwiev {
+font-size: small;
+color: gray;
+}
+.Movies-card-populity {
+font-weight: bold;
+}
